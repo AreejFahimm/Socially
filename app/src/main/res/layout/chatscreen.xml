@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity6">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="38dp"
+        android:background="#F8F8F8"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next"
+            android:scaleX="-1"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/img_6"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="internshala"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/camera"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/img_7"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:padding="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/oval"
+            android:backgroundTint="#F8F8F8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/camera"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/camera"
+                />
+
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/camera"
+                android:layout_toStartOf="@+id/inlineActions"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Message..."
+                android:background="#F8F8F8"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:id="@+id/inlineActions"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/link" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/picture" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/stickers" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/oval"
+        android:layout_above="@id/inputBar"
+        android:layout_alignEnd="@+id/inputBar"
+        android:backgroundTint="#9A5A5B"
+        android:text="Hello"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/hello"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/hello"
+        android:layout_marginBottom="25dp"
+        android:text="4:49 pm"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>
