@@ -30,9 +30,63 @@
         android:layout_height="wrap_content"
         android:background="@drawable/close"
         android:layout_alignEnd="@+id/image"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         android:id="@+id/close"
         />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/img_10"
+        android:id="@+id/circle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highlight"
+        android:layout_toEndOf="@+id/circle"
+        android:layout_marginTop="63dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/highlight"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="December 3, 2023"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/highlight"
+        android:layout_marginTop="63dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highlight"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/sound"
+        android:layout_marginStart="5dp"
+        android:text="Artist. Song Title"
+        android:textColor="@color/white"
+        android:id="@+id/song"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/soundwave"
+        android:layout_below="@+id/highlight"
+        android:layout_marginStart="55dp"
+        android:id="@+id/sound"
+        />
 </RelativeLayout>
