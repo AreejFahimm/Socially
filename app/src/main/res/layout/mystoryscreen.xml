@@ -5,39 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity9">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/img_11"
-        android:id="@+id/image"
-
-        />
+    android:background="@drawable/img_9"
+    tools:context=".MainActivity11">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/user_story_message"
+        android:background="@drawable/my_story"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/group_1"
 
         />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="70dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/img_4"
+        android:src="@drawable/img_5"
         android:id="@+id/circle"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="craig_love"
+        android:text="gurskey.studio"
         android:layout_toEndOf="@+id/circle"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:layout_marginStart="10dp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -48,12 +48,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4h"
-        android:textColor="#CFCFCF"
+        android:text="11h"
+        android:textColor="#ffffff"
         android:layout_toRightOf="@+id/person"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="30dp"
         android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/verfied_badge"
+        android:layout_toEndOf="@id/person"
+        android:layout_marginTop="75dp"
+        android:textColor="#935855"
         />
 
 </RelativeLayout>

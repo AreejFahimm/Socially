@@ -5,16 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/img_9"
     tools:context=".MainActivity8">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/img_9"
-        android:layout_above="@+id/bottombar"
-        android:id="@+id/image"
-        />
 
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/close"
-        android:layout_alignEnd="@+id/image"
         android:layout_alignParentRight="true"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
@@ -88,5 +80,13 @@
         android:layout_below="@+id/highlight"
         android:layout_marginStart="55dp"
         android:id="@+id/sound"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/group_1"
+
         />
 </RelativeLayout>

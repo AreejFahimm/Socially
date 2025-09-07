@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity13">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_bar"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tabbar"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron_left"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kyan.coleman"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:id="@+id/person"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/verfied_badgeblue"
+        android:layout_toRightOf="@+id/person"
+        android:layout_marginTop="53dp"
+        android:layout_marginStart="5dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/options"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/back"
+        android:src="@drawable/img_13"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#B71B54"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/acc1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc1"
+        android:text="Kyan Coleman"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="151"
+        android:layout_toRightOf="@id/acc1"
+        android:layout_below="@id/person"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/postsno"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="posts"
+        android:layout_below="@+id/postsno"
+        android:layout_toRightOf="@+id/acc1"
+        android:layout_marginStart="27dp"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="112K"
+        android:layout_toRightOf="@id/postsno"
+        android:layout_below="@id/person"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/followers"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="followers"
+        android:layout_below="@+id/followers"
+        android:layout_toRightOf="@+id/postsno"
+        android:layout_marginStart="35dp"
+        android:textSize="17dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="162"
+        android:layout_toRightOf="@id/followers"
+        android:layout_below="@id/person"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="45dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/following"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="following"
+        android:layout_below="@+id/following"
+        android:layout_toRightOf="@+id/followers"
+        android:layout_marginStart="45dp"
+        android:textSize="17dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:src="@drawable/img_14"
+        android:layout_below="@id/name"
+        android:layout_marginStart="10dp"
+        android:id="@+id/thread"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blogger"
+        android:layout_below="@+id/thread"
+        android:layout_marginStart="10dp"
+        android:textSize="15dp"
+        android:textColor="#9EADB1"
+        android:id="@+id/blogger"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat...more"
+        android:layout_below="@+id/blogger"
+        android:layout_marginStart="10dp"
+        android:id="@+id/desc"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/link"
+        android:layout_below="@id/desc"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/link"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kyan.co"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/link"
+        android:layout_below="@id/desc"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/kyan"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_15"
+        android:layout_below="@+id/link"
+        android:id="@+id/likes"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followed by "
+        android:layout_toRightOf="@id/likes"
+        android:layout_below="@+id/kyan"
+        android:layout_marginTop="30dp"
+        android:id="@+id/followed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your friend, another friend and 297 others "
+        android:layout_toRightOf="@id/followed"
+        android:layout_below="@+id/kyan"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:text="Follow"
+        android:textColor="@color/white"
+        android:backgroundTint="#AC7F5E"
+        android:layout_marginStart="8dp"
+        android:id="@+id/follow"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:layout_toRightOf="@+id/follow"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:backgroundTint="#F0F4F7"
+        android:layout_marginStart="8dp"
+        android:id="@+id/message"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:layout_toRightOf="@+id/message"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:backgroundTint="#F0F4F7"
+        android:layout_marginStart="8dp"
+        android:id="@+id/email"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/likes"
+        android:layout_toRightOf="@+id/email"
+        android:backgroundTint="#F0F4F7"
+        android:background="@drawable/add_user"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/follow"
+        android:src="@drawable/img_10"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#F0F4F7"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/acc"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/follow"
+        android:src="@drawable/img_16"
+        android:layout_marginTop="15dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#F0F4F7"
+        android:layout_toEndOf="@+id/acc"
+        android:layout_marginStart="17dp"
+        android:id="@+id/acc2"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/follow"
+        android:src="@drawable/img_4"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#F0F4F7"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/acc2"
+        android:id="@+id/acc3"
+        app:civ_circle_background_color="@color/black"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/follow"
+        android:src="@drawable/img_17"
+        app:civ_border_width="5dp"
+        android:layout_marginTop="15dp"
+        app:civ_border_color="#F0F4F7"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/acc3"
+        android:id="@+id/acc4"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/follow"
+        android:src="@drawable/img_18"
+        app:civ_border_width="5dp"
+        android:layout_marginTop="15dp"
+        app:civ_border_color="#F0F4F7"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/acc4"
+        android:id="@+id/acc5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc"
+        android:text="Highlight 1"
+        android:layout_marginStart="10dp"
+        android:id="@+id/hg1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc"
+        android:text="Highlight 2"
+        android:layout_toRightOf="@+id/hg1"
+        android:layout_marginStart="10dp"
+        android:id="@+id/hg2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc"
+        android:text="Highlight 3"
+        android:layout_toRightOf="@+id/hg2"
+        android:layout_marginStart="10dp"
+        android:id="@+id/hg3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc"
+        android:layout_toRightOf="@+id/hg3"
+        android:text="Highlight 4"
+        android:layout_marginStart="10dp"
+        android:id="@+id/hg4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acc"
+        android:layout_toRightOf="@+id/hg4"
+        android:text="New"
+        android:layout_marginStart="30dp"
+        android:id="@+id/hg5"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tabbar"
+        android:src="@drawable/img_9"
+        />
+</RelativeLayout>
