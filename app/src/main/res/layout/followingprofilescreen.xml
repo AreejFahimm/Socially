@@ -234,9 +234,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/likes"
-        android:text="Follow"
-        android:textColor="@color/white"
-        android:backgroundTint="#AC7F5E"
+        android:text="Following"
+        android:textColor="@color/black"
+        android:backgroundTint="#F0F4F7"
         android:layout_marginStart="8dp"
         android:id="@+id/follow"
         />
@@ -389,11 +389,69 @@
         android:id="@+id/hg5"
         />
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="145dp"
-        android:layout_alignParentStart="true"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_above="@+id/tabbar"
-        android:src="@drawable/img_9"
-        />
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_9"
+            android:id="@+id/img1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_19" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_20" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/grid__new_"
+        android:layout_below="@+id/acc2"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/grid"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/tag"
+        android:layout_below="@+id/acc2"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/grid"
+        >
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:src="@drawable/line2"
+        android:layout_below="@id/grid"
+        android:layout_marginTop="8dp"
+        >
+
+    </ImageView>
+
 </RelativeLayout>

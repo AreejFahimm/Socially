@@ -65,12 +65,11 @@
         />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:background="@drawable/redoval"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#FF0000"
+        android:backgroundTint="#FF0000"
         android:layout_marginBottom="20dp"
         android:drawableLeft="@drawable/vector"
         />

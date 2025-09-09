@@ -201,13 +201,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:alpha="1"
-                    android:background="@drawable/createbtn"
                     android:enabled="true"
                     android:padding="14dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#AE7675"
                     android:text="Create an Account"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+
+                    />
 
 
 
