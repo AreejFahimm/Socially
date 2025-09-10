@@ -88,6 +88,7 @@
         android:layout_marginTop="45dp"
         android:layout_marginStart="30dp"
         android:textSize="20dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:id="@+id/postsno"
         />
@@ -100,6 +101,7 @@
         android:layout_toRightOf="@+id/acc1"
         android:layout_marginStart="27dp"
         android:textSize="17dp"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -113,6 +115,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/followers"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -137,6 +140,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/following"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -147,6 +151,7 @@
         android:layout_toRightOf="@+id/followers"
         android:layout_marginStart="45dp"
         android:textSize="17dp"
+        android:textColor="@color/black"
         />
 
     <ImageView
@@ -167,6 +172,7 @@
         android:textSize="15dp"
         android:textColor="#9EADB1"
         android:id="@+id/blogger"
+
         />
 
     <TextView
@@ -177,6 +183,7 @@
         android:layout_marginStart="10dp"
         android:id="@+id/desc"
         android:layout_marginTop="8dp"
+        android:textColor="@color/black"
 
         />
 
@@ -188,6 +195,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:id="@+id/link"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -199,6 +207,7 @@
         android:layout_below="@id/desc"
         android:layout_marginTop="8dp"
         android:layout_marginStart="5dp"
+        android:textColor="@color/black"
         android:id="@+id/kyan"
         />
 
@@ -218,6 +227,7 @@
         android:layout_below="@+id/kyan"
         android:layout_marginTop="30dp"
         android:id="@+id/followed"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -228,6 +238,7 @@
         android:layout_below="@+id/kyan"
         android:textStyle="bold"
         android:layout_marginTop="30dp"
+        android:textColor="@color/black"
         />
 
     <Button
@@ -347,6 +358,7 @@
         android:text="Highlight 1"
         android:layout_marginStart="10dp"
         android:id="@+id/hg1"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -357,6 +369,7 @@
         android:layout_toRightOf="@+id/hg1"
         android:layout_marginStart="10dp"
         android:id="@+id/hg2"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -367,6 +380,7 @@
         android:layout_toRightOf="@+id/hg2"
         android:layout_marginStart="10dp"
         android:id="@+id/hg3"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -377,6 +391,7 @@
         android:text="Highlight 4"
         android:layout_marginStart="10dp"
         android:id="@+id/hg4"
+        android:textColor="@color/black"
         />
 
     <TextView

@@ -12,8 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230504">
         <activity
-            android:name=".MainActivity14"
+            android:name=".MainActivity16"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity15"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity14"
+            android:exported="true" />
         <activity
             android:name=".MainActivity13"
             android:exported="false" />
@@ -52,13 +64,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
