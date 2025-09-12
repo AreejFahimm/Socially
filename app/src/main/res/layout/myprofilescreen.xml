@@ -66,7 +66,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_below="@+id/name"
-            android:src="@drawable/img_4"
+            android:src="@drawable/img_3"
             app:civ_border_width="3dp"
             app:civ_border_color="#B71B54"
             android:layout_marginStart="5dp"
@@ -206,7 +206,7 @@
             android:src="@drawable/img_10"
             app:civ_border_width="5dp"
             app:civ_border_color="@color/white"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="3dp"
             android:background="@drawable/greycircle"
             android:id="@+id/acc" />
 
@@ -250,7 +250,7 @@
             android:layout_height="wrap_content"
             android:text="New"
             android:layout_below="@id/acc"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="25dp"
             android:textSize="17dp"
             android:gravity="center"
             android:textColor="#935855"

@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/like"
+        android:background="@drawable/like2"
         android:layout_below="@+id/image"
         android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
@@ -140,7 +140,6 @@
         android:layout_height="wrap_content"
         android:text="joshua_I"
         android:layout_below="@id/likedby"
-        android:layout_above="@id/tabbar"
         android:textStyle="bold"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -160,7 +159,6 @@
         android:layout_marginStart="5dp"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:layout_above="@id/tabbar"
         />
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -220,8 +218,8 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/postedby"
         android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
@@ -233,8 +231,8 @@
         />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/postedby"
         android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
@@ -247,8 +245,8 @@
         />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/postedby"
         android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
@@ -260,8 +258,8 @@
         android:id="@+id/acc3"
         />
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/postedby"
         android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
@@ -273,14 +271,116 @@
         android:id="@+id/acc4"
         />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tab_bar"
-            android:layout_alignParentBottom="true"
-            android:id="@+id/tabbar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Story"
+        android:textColor="@color/black"
+        android:layout_above="@+id/postedby"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="18dp"
+        android:textSize="16sp"
+        android:id="@+id/yourstory"
+        />
 
-        <RelativeLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="joshua_I"
+        android:textColor="@color/black"
+        android:layout_above="@+id/postedby"
+        android:layout_toRightOf="@+id/yourstory"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="22dp"
+        android:textSize="16sp"
+        android:id="@+id/craig"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="craig_love"
+        android:textColor="@color/black"
+        android:layout_above="@+id/postedby"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/craig"
+        android:layout_marginStart="22dp"
+        android:textSize="16sp"
+        android:id="@+id/josh"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="karenne"
+        android:textColor="@color/black"
+        android:layout_above="@+id/postedby"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="22dp"
+        android:layout_toRightOf="@+id/josh"
+        android:textSize="16sp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/home__filled_" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/home"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/create" />
+
+        <ImageView
+            android:id="@+id/notifs"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/post"
+            android:src="@drawable/like" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/notifs"
+            android:src="@drawable/img_3"
+            app:civ_border_color="#935855"
+            app:civ_border_width="3dp"
+            android:id="@+id/profile"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/topbar">
@@ -306,14 +406,16 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/share"
+                android:backgroundTint="#935855"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="40dp"
                 android:id="@+id/topshare"
                 android:layout_marginEnd="10dp" />
 
             <TextView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:id="@+id/inbox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
                 android:background="@drawable/music"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="40dp"

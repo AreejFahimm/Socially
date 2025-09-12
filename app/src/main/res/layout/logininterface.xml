@@ -89,6 +89,7 @@
         android:text="Sign up"
         android:textColor="#9A5A5B"
         android:textStyle="bold"
+        android:id="@+id/signup"
         />
 
 </RelativeLayout>

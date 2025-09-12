@@ -37,12 +37,14 @@
         android:layout_height="60dp"
         android:layout_below="@+id/logo"
         android:hint="  Username"
+        android:textColorHint="#888888"
         android:textSize="20dp"
         android:textColor="@color/black"
         android:background="@drawable/rectangle"
         android:backgroundTint="#F8F8F8"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:paddingStart="10dp"
         android:id="@+id/username"
         />
 
@@ -52,12 +54,14 @@
         android:layout_below="@+id/username"
         android:hint="  Password"
         android:textSize="20dp"
+        android:textColorHint="#888888"
         android:background="@drawable/rectangle"
         android:textColor="@color/black"
         android:backgroundTint="#F8F8F8"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
         android:id="@+id/password"
         />
 
@@ -120,6 +124,7 @@
         android:text="Sign up"
         android:textColor="#9A5A5B"
         android:textStyle="bold"
+        android:id="@+id/signup"
         />
 
     <TextView

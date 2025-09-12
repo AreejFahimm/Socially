@@ -116,7 +116,9 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/chat1"
+                        >
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
@@ -185,7 +187,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat2">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
@@ -252,7 +255,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat3">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/image3"
@@ -319,7 +323,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat4">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
@@ -387,7 +392,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat5">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
@@ -455,7 +461,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat6">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"

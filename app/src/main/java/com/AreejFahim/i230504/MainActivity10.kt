@@ -10,5 +10,6 @@ class MainActivity10 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.editstoryscreen)
 
+
     }
 }

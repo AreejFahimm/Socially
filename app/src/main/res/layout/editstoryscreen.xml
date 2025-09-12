@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:src="@drawable/edit_story"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-10dp"
+        android:layout_marginBottom="-30dp"
         android:id="@+id/btmbar"
         android:layout_centerHorizontal="true"
+
         />
 
    <TextView

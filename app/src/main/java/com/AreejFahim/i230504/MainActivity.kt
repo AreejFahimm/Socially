@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         val splash = findViewById<RelativeLayout>(R.id.splash)
 
         splash.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
-            finish() //  removes this screen from backstack
+            finish()
         }
         }
     }
