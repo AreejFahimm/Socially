@@ -9,26 +9,10 @@
     tools:context=".MainActivity5">
 
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/tab_bar"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/tabbar"
-        />
-
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-
-    </ScrollView>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="415dp"
-        android:src="@drawable/img_1"
+        android:src="@drawable/img_41"
         android:layout_centerInParent="true"
         android:id="@+id/image"
         />
@@ -236,10 +220,10 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_above="@+id/postedby"
-        android:layout_below="@+id/cam"
+        android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_3"
         app:civ_border_width="3dp"
@@ -252,7 +236,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_above="@+id/postedby"
-        android:layout_below="@+id/cam"
+        android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_2"
         app:civ_border_width="3dp"
@@ -266,7 +250,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_above="@+id/postedby"
-        android:layout_below="@+id/cam"
+        android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_4"
         app:civ_border_width="3dp"
@@ -279,7 +263,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_above="@+id/postedby"
-        android:layout_below="@+id/cam"
+        android:layout_below="@+id/topbar"
         android:layout_marginBottom="20dp"
         android:src="@drawable/img_5"
         app:civ_border_width="3dp"
@@ -289,45 +273,51 @@
         android:id="@+id/acc4"
         />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_bar"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tabbar" />
 
-    <TextView
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:background="@drawable/camera"
-        android:layout_marginTop="40dp"
-        android:id="@+id/cam"
-        android:layout_marginStart="8dp"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topbar">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Socially"
-        android:layout_centerHorizontal="true"
-        android:textSize="20dp"
-        android:layout_marginTop="48dp"
-        android:textColor="#935855"
-        />
+            <TextView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/camera"
+                android:layout_marginTop="40dp"
+                android:id="@+id/cam"
+                android:layout_marginStart="8dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socially"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="48dp"
+                android:textColor="#935855" />
 
-    <TextView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/share"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="40dp"
-        android:id="@+id/topshare"
-        />
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/share"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/topshare"
+                android:layout_marginEnd="10dp" />
 
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/music"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="60dp" />
+        </RelativeLayout>
 
-    <TextView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/music"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="35dp"
-        />
-
-
-</RelativeLayout>
+    </RelativeLayout>

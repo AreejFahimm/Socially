@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity17">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FAFAFA"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:text="jacob_w"
+                    android:textSize="20dp"
+                    android:textColor="#935855"
+                    android:textStyle="bold"
+                    android:id="@+id/name" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:layout_marginTop="44dp"
+                    android:src="@drawable/chevron_up"
+                    android:layout_marginEnd="10dp"
+                    android:scaleY="-1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/chevron_left2"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/back"
+
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/group"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/add"
+                    android:layout_marginEnd="15dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="80dp"
+                    android:hint="Search"
+                    android:textColorHint="#888888"
+                    android:paddingStart="35dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@drawable/rectangle"
+                    android:backgroundTint="#EAEAEA"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/sersch"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/search2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img_2"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/image"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="joshua_I"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc1"
+                            android:layout_toRightOf="@+id/image"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Have a nice day, bro!"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc1"
+                            android:layout_toRightOf="@+id/image"
+                            android:id="@+id/msg"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".now"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img_11"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/image2"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="karenne"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc2"
+                            android:layout_toRightOf="@+id/image2"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I heard this is a good mov.."
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc2"
+                            android:layout_toRightOf="@+id/image2"
+                            android:id="@+id/msg2"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera2"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".now"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera2"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image3"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/img_43" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="martini_rond"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc3"
+                            android:layout_toRightOf="@+id/image3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See you on the next meet.."
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc3"
+                            android:layout_toRightOf="@+id/image3"
+                            android:id="@+id/msg3"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".15m"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera3"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img_44"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/image4"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="andrewwww_"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc4"
+                            android:layout_toRightOf="@+id/image4"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sounds good 😂😂😂"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc4"
+                            android:layout_toRightOf="@+id/image4"
+                            android:id="@+id/msg4"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera4"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".20m"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera4"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img_45"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/image5"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kiero_d"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc5"
+                            android:layout_toRightOf="@+id/image5"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The new design looks cool.."
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc5"
+                            android:layout_toRightOf="@+id/image5"
+                            android:id="@+id/msg5"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera5"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".1m"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera5"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img_3"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/image6"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="maxjacobson"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/acc6"
+                            android:layout_toRightOf="@+id/image6"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thank you bro!"
+                            android:textSize="15dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/acc6"
+                            android:layout_toRightOf="@+id/image6"
+                            android:id="@+id/msg6"
+                            />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/camera"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/camera6"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=".2h"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/camera6"
+                            android:layout_marginTop="34dp"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="15dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/camera__filled_"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/camerafilled"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camera"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@id/camerafilled"
+                        android:layout_marginStart="15dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
