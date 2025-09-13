@@ -28,7 +28,7 @@ class MainActivity5 : AppCompatActivity() {
         val follow= findViewById<TextView>(R.id.joshua2)
 
         post.setOnClickListener{
-            val intent = Intent(this, MainActivity10::class.java)
+            val intent = Intent(this, MainActivity20::class.java)
             startActivity(intent)
         }
 
