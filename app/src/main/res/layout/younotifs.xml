@@ -1,10 +1,798 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity22">
+    android:background="@color/white"
+    tools:context=".MainActivity17">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottombar"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FAFAFA"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following"
+                    android:textColor="#935855"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/folowing"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You"
+                    android:textColor="#935855"
+                    android:layout_marginStart="120dp"
+                    android:layout_toRightOf="@id/folowing"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/You"
+                    />
+
+                <View
+                    android:layout_width="180dp"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/folowing"
+                    android:background="@drawable/line"
+                    android:backgroundTint="#935855"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/line"
+                    />
+                <View
+                    android:layout_width="230dp"
+                    android:layout_height="3dp"
+                    android:layout_toRightOf="@id/folowing"
+                    android:layout_below="@id/You"
+                    android:background="@drawable/line"
+                    android:backgroundTint="#66888888"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/line2"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:paddingBottom="20dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+                <!-- ===== Header ===== -->
+                <TextView
+                    android:id="@+id/follow_requests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Follow Requests"
+                    android:textColor="#935855"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/req_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/follow_requests"
+                    android:layout_marginTop="10dp"
+                    android:background="#EDEDED" />
+
+                <TextView
+                    android:id="@+id/label_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/req_divider"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="New"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <!-- ===== Row: karennne liked your photo. 1h ===== -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/new_avatar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@id/label_new"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_5" />
+
+                <ImageView
+                    android:id="@+id/new_thumb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignTop="@id/new_avatar"
+                    android:src="@drawable/img_36" />
+
+                <!-- inline text: name (bold) + action + time -->
+                <TextView
+                    android:id="@+id/new_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_alignTop="@id/new_avatar"
+                    android:text="karenne"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/new_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/new_name"
+                   android:layout_toRightOf="@+id/new_name"
+                    android:text=" liked your photo."
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/new_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/new_name"
+                    android:layout_toEndOf="@id/new_action"
+                    android:layout_toStartOf="@id/new_thumb"
+                    android:layout_marginStart="6dp"
+                    android:text="1h"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <!-- optional divider under the row -->
+                <View
+                    android:id="@+id/new_row_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/new_avatar"
+                    android:layout_marginTop="20dp"
+                    android:background="#EDEDED"/>
+
+                <!-- ===== Section label ===== -->
+                <TextView
+                    android:id="@+id/today_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_row_divider"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Today"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <!-- ===== Row: kiero_d, zackjohn and 26 others liked your photo. 3h ===== -->
+
+                <!-- left avatars (overlap) -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/today_a1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/today_label"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/today_a2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_toEndOf="@id/today_a1"
+                    android:layout_alignTop="@id/today_a1"
+                    android:layout_marginStart="-12dp"
+                    android:src="@drawable/img_3" />
+
+                <!-- right thumbnail -->
+                <ImageView
+                    android:id="@+id/today_thumb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignTop="@id/today_a1"
+                    android:src="@drawable/img_36" />
+
+                <!-- top line: names + count (bold) -->
+                <TextView
+                    android:id="@+id/today_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/today_a2"
+                    android:layout_toStartOf="@id/today_thumb"
+                    android:layout_marginStart="12dp"
+                    android:layout_alignTop="@id/today_a1"
+                    android:text="kiero_d, zackjohn and "
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/today_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/today_names"
+                    android:layout_toEndOf="@id/today_names"
+                    android:layout_toStartOf="@id/today_thumb"
+                    android:text="26 others"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <!-- bottom line -->
+                <TextView
+                    android:id="@+id/today_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/today_names"
+                    android:layout_alignStart="@id/today_names"
+                    android:layout_toStartOf="@id/today_thumb"
+                    android:layout_marginTop="2dp"
+                    android:text="liked your photo."
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/today_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/today_bottom"
+                    android:layout_toEndOf="@id/today_bottom"
+                    android:layout_toStartOf="@id/today_thumb"
+                    android:layout_marginStart="6dp"
+                    android:text="3h"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <View
+                    android:id="@+id/today_row_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/today_a1"
+                    android:layout_marginTop="20dp"
+                    android:background="#EDEDED" />
+
+                <!-- ===== Section label ===== -->
+                <TextView
+                    android:id="@+id/week_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/today_row_divider"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="This Week"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+                <!-- left avatar -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/week_a1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/week_label"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_4" />
+
+                <!-- right thumbnail -->
+                <ImageView
+                    android:id="@+id/week_thumb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignTop="@id/week_a1"
+                    android:src="@drawable/img_49" />
+
+                <!-- top line: name (bold) + action + comment: + mention + rest -->
+                <TextView
+                    android:id="@+id/week_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_alignTop="@id/week_a1"
+                    android:text="craig_love"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/week_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/week_name"
+                    android:layout_toRightOf="@id/week_name"
+                    android:text=" mentioned you in a "
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/week_comment_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/week_mention"
+                   android:layout_marginStart="80dp"
+                    android:text="comment "
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/week_mention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/week_rest"
+                    android:layout_below="@id/week_name"
+                    android:layout_toRightOf="@id/week_comment_label"
+                    android:layout_marginStart="2dp"
+                    android:text=": @jacob_w"
+                    android:textSize="15sp"
+                    android:textColor="#2D6AE3"/>
+
+                <TextView
+                    android:id="@+id/week_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/week_time"
+                    android:layout_toRightOf="@id/week_mention"
+                    android:text=" exactly.."
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+                <!-- time line under the text -->
+                <TextView
+                    android:id="@+id/week_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/week_name"
+                    android:layout_toRightOf="@id/week_rest"
+                    android:layout_marginTop="4dp"
+                    android:text="  2d"
+                    android:textSize="14sp"
+                    android:textColor="#9A9A9A"/>
+
+                <!-- small reply row -->
+                <ImageView
+                    android:id="@+id/week_reply_icon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_below="@id/week_time"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignStart="@id/week_name"
+                    android:src="@drawable/like"
+                    app:tint="#BDBDBD"/>
+
+                <TextView
+                    android:id="@+id/week_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/week_reply_icon"
+                    android:layout_toRightOf="@id/week_reply_icon"
+                    android:layout_below="@id/week_time"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Reply"
+                    android:textSize="14sp"
+                    android:textColor="#9A9A9A"/>
+
+                <!-- divider under this block -->
+                <View
+                    android:id="@+id/week_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/week_reply_icon"
+                    android:layout_marginTop="16dp"
+                    android:background="#EDEDED"/>
+
+                <!-- ===== Row 1: martini_rond started following you. 3d ===== -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/f1_avatar"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/week_divider"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_10" />
+
+                <Button
+                    android:id="@+id/f1_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/f1_avatar"
+                    android:layout_marginEnd="16dp"
+                    android:text="Message"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#B8B8B8"
+                    android:elevation="50dp"
+                    />
+
+                <TextView
+                    android:id="@+id/f1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/f1_avatar"
+                    android:layout_toStartOf="@id/f1_btn"
+                    android:layout_marginStart="12dp"
+                    android:layout_alignTop="@id/f1_avatar"
+                    android:text="martini_rond"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/f1_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/f1_name"
+                    android:layout_alignStart="@id/f1_name"
+                    android:layout_toStartOf="@id/f1_btn"
+                    android:text="started following you."
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/f1_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/f1_action"
+                    android:layout_toEndOf="@id/f1_action"
+                    android:layout_toStartOf="@id/f1_btn"
+                    android:layout_marginStart="6dp"
+                    android:text="3d"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <View
+                    android:id="@+id/f1_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/f1_avatar"
+                    android:layout_marginTop="16dp"
+                    android:background="#EDEDED" />
+
+                <!-- ===== Row 2: maxjacobson started following you. 3d (Message) ===== -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/f2_avatar"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/f1_div"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_2" />
+
+                <Button
+                    android:id="@+id/f2_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/f2_avatar"
+                    android:layout_marginEnd="16dp"
+                    android:text="Message"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#B8B8B8"/>
+
+                <TextView
+                    android:id="@+id/f2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/f2_avatar"
+                    android:layout_toStartOf="@id/f2_btn"
+                    android:layout_marginStart="12dp"
+                    android:layout_alignTop="@id/f2_avatar"
+                    android:text="maxjacobson"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/f2_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/f2_name"
+                    android:layout_alignStart="@id/f2_name"
+                    android:layout_toStartOf="@id/f2_btn"
+                    android:text="started following you."
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/f2_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/f2_action"
+                    android:layout_toEndOf="@id/f2_action"
+                    android:layout_toStartOf="@id/f2_btn"
+                    android:layout_marginStart="6dp"
+                    android:text="3d"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <View
+                    android:id="@+id/f2_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/f2_avatar"
+                    android:layout_marginTop="16dp"
+                    android:background="#EDEDED" />
+
+                <!-- ===== Row 3: mis_potter started following you. 3d (Follow filled) ===== -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/f3_avatar"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/f2_div"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_16" />
+
+                <Button
+                    android:id="@+id/f3_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/f3_avatar"
+                    android:layout_marginEnd="16dp"
+                    android:text="  Follow  "
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#935855"
+                     />
+
+                <TextView
+                    android:id="@+id/f3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/f3_avatar"
+                    android:layout_toStartOf="@id/f3_btn"
+                    android:layout_marginStart="12dp"
+                    android:layout_alignTop="@id/f3_avatar"
+                    android:text="mis_potter"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/f3_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/f3_name"
+                    android:layout_alignStart="@id/f3_name"
+                    android:layout_toStartOf="@id/f3_btn"
+                    android:text="started following you."
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/f3_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/f3_action"
+                    android:layout_toEndOf="@id/f3_action"
+                    android:layout_toStartOf="@id/f3_btn"
+                    android:layout_marginStart="6dp"
+                    android:text="3d"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <View
+                    android:id="@+id/f3_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/f3_avatar"
+                    android:layout_marginTop="16dp"
+                    android:background="#EDEDED" />
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/f3_div"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="This Month"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/lastavatar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@id/month"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/img_5" />
+
+                <ImageView
+                    android:id="@+id/lastthumb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignTop="@id/lastavatar"
+                    android:src="@drawable/img_36" />
+
+                <!-- inline text: name (bold) + action + time -->
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_alignTop="@id/lastavatar"
+                    android:text="karenne"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/lastaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/lastname"
+                    android:layout_toRightOf="@+id/lastname"
+                    android:text=" liked your photo."
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/lasttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/lastname"
+                    android:layout_toEndOf="@id/lastaction"
+                    android:layout_toStartOf="@id/lastthumb"
+                    android:layout_marginStart="6dp"
+                    android:text="1h"
+                    android:textSize="15sp"
+                    android:textColor="#9A9A9A" />
+
+                <!-- optional divider under the row -->
+                <View
+                    android:id="@+id/lastdiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/lastavatar"
+                    android:layout_marginTop="20dp"
+                    android:background="#EDEDED"/>
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:elevation="6dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/home"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/create" />
+
+        <ImageView
+            android:id="@+id/notifs"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/post"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/like__filled_" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/notifs"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/img_3"
+            app:civ_border_color="#935855"
+            app:civ_border_width="3dp"/>
+    </RelativeLayout>
+</RelativeLayout>

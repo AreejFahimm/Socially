@@ -22,5 +22,12 @@ class MainActivity6 : AppCompatActivity() {
 
         }
 
+        val back = findViewById<ImageView>(R.id.back)
+
+        back.setOnClickListener{
+            val intent = Intent(this, MainActivity18::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -84,7 +84,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#D19F9E"
+        android:backgroundTint="#9A5A5B"
         android:text="Log in"
         android:textStyle="bold"
         android:textSize="25dp"

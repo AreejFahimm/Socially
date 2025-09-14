@@ -3,6 +3,7 @@ package com.AreejFahim.i230504
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,13 @@ class MainActivity18 : AppCompatActivity() {
         val chat4 = findViewById<RelativeLayout>(R.id.chat4)
         val chat5 = findViewById<RelativeLayout>(R.id.chat5)
         val chat6 = findViewById<RelativeLayout>(R.id.chat6)
+
+        val back= findViewById<ImageView>(R.id.back)
+
+        back.setOnClickListener{
+            val intent = Intent(this, MainActivity5::class.java)
+            startActivity(intent)
+        }
 
         chat.setOnClickListener{
             val intent = Intent(this, MainActivity6::class.java)
