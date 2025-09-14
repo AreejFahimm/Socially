@@ -58,16 +58,94 @@
         android:id="@+id/type3"
         />
 
-<!--
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/home_indicator"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:id="@+id/home_indicator"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/gear_wide"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="20dp"
         />
--->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/right"
+        android:scaleX="-1"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/whitecircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/type2"
+        android:layout_marginBottom="50dp"
+        android:src="@android:color/transparent"
+        app:civ_circle_background_color="#FFFFFF"
+        app:civ_border_width="16dp"
+        app:civ_border_color="#66888888"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/whitecircle"
+        android:layout_above="@id/type2"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/bolt_circle_outline"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/bolt"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/whitecircle"
+        android:layout_above="@id/type2"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/reuse"
+        android:layout_marginStart="20dp"
+        android:rotationY="180"
+        android:id="@+id/reuse"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/reuse"
+        android:layout_above="@id/type2"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/smiley"
+        android:layout_marginStart="20dp"
+        android:rotationY="180"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/bolt"
+        android:layout_above="@id/type2"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/img_46"
+        android:layout_marginEnd="20dp"
+        android:rotationY="180"
+        android:background="@drawable/rectangle"
+        />
+
+
+    <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_indicator"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/home_indicator"
+            />
+    -->
 
 </RelativeLayout>

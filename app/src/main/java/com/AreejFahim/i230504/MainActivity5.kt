@@ -23,9 +23,13 @@ class MainActivity5 : AppCompatActivity() {
         val camera = findViewById<TextView>(R.id.cam)
         val urstory = findViewById<CircleImageView>(R.id.acc3)
         val post = findViewById<ImageView>(R.id.post)
-
-
+        val notifs = findViewById<ImageView>(R.id.notifs)
         val follow= findViewById<TextView>(R.id.joshua2)
+
+        notifs.setOnClickListener {
+            val intent = Intent(this, MainActivity21::class.java)
+            startActivity(intent)
+        }
 
         post.setOnClickListener{
             val intent = Intent(this, MainActivity20::class.java)

@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- outer gradient ring -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="sweep"
+                android:startColor="#FFC95B"
+                android:centerColor="#FE4C7A"
+                android:endColor="#8A4DFF"/>
+        </shape>
+    </item>
+
+    <!-- inner white to create the ring thickness -->
+    <item android:inset="3dp">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</layer-list>

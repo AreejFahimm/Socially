@@ -8,88 +8,108 @@
     android:background="@color/white"
     tools:context=".MainActivity3">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_height="120dp"
-        android:layout_width="120dp"
-        android:src="@drawable/img"
-        android:layout_centerInParent="true"
-        android:id="@+id/profilepic"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profilepic"
-        android:text="jacob_w"
-        android:layout_centerInParent="true"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:id="@+id/profilename"
-        />
-
-    <Button
+    <!-- Scrollable container -->
+    <ScrollView
+        android:id="@+id/login_scroll"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/profilename"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="#9A5A5B"
-        android:text="Log in"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        android:id="@+id/loginbtn"
-        />
-<!--        android:background="@drawable/rectangle"-->
-<!--  if i use this , the color becomes purple  -->
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch Accounts"
-        android:layout_below="@+id/loginbtn"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:textColor="#9A5A5B"
-        android:textSize="16dp"
-        android:textStyle="bold"
-    />
+        <!-- Your original content -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/profilepic"
-        android:layout_marginBottom="60dp"
-        android:text="Socially"
-        android:textSize="70dp"
-        android:layout_centerInParent="true"
-        android:textColor="#9F4441"
-        android:textStyle="bold"
-        />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_3" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account?  "
-        android:id="@+id/text1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:layout_centerInParent="true"
-        android:textColor="#9A5A5B"
-        />
+            <TextView
+                android:id="@+id/profilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilepic"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="jacob_w"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/text1"
-        android:layout_toEndOf="@+id/text1"
-        android:text="Sign up"
-        android:textColor="#9A5A5B"
-        android:textStyle="bold"
-        android:id="@+id/signup"
-        />
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/profilename"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#9A5A5B"
+                android:text="Log in"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <!-- If you use a shape drawable background, set android:backgroundTint="@null" -->
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginbtn"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="Switch Accounts"
+                android:textColor="#9A5A5B"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/profilepic"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Socially"
+                android:textColor="#8B3B3A"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="40dp"
+                android:text="Don't have an account?  "
+                android:textColor="#9A5A5B" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_above="@id/text1"
+                android:background="@drawable/line"
+                android:backgroundTint="#ECECEC"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/line"
+                />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text1"
+                android:layout_toEndOf="@+id/text1"
+                android:text="Sign up"
+                android:textColor="#9A5A5B"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

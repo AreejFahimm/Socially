@@ -82,11 +82,68 @@
         android:id="@+id/sound"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/group_1"
-
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#ECECEC"
+        android:layout_marginTop="50dp"
+        android:id="@+id/line"
+        android:layout_marginStart="8dp"
         />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#B9B9B9"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/line"
+        android:id="@+id/line2"
+        android:layout_marginStart="8dp"
+        />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#B9B9B9"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/line2"
+        android:id="@+id/line3"
+        android:layout_marginStart="8dp"
+        />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#B9B9B9"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/line3"
+        android:id="@+id/line4"
+        android:layout_marginStart="8dp"
+        />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:backgroundTint="#B9B9B9"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/line4"
+        android:id="@+id/line5"
+        android:layout_marginStart="8dp"
+        />
+
+
+
+
+
+
+    <!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/group_1"
+
+            />-->
 </RelativeLayout>

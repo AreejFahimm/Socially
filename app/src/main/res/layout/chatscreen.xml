@@ -24,8 +24,7 @@
             android:id="@+id/back"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/next"
-            android:scaleX="-1"
+            android:src="@drawable/chevron_left"
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -49,7 +48,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/camera"
+            android:src="@drawable/video_call_outlined"
             android:id="@+id/call"
             />
 
@@ -113,7 +112,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/link" />
+                    android:src="@drawable/microphone_342" />
 
                 <ImageView
                     android:layout_width="26dp"
@@ -126,7 +125,7 @@
                     android:layout_height="26dp"
                     android:layout_marginStart="6dp"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/stickers" />
+                    android:src="@drawable/sticker_12_filled" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="Socially"
-        android:textSize="70dp"
+        android:textSize="55dp"
         android:id="@+id/logo"
+        android:fontFamily="@font/poppins_semibold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
-        android:textColor="#9F4441"
+        android:textColor="#8B3B3A"
         android:textStyle="bold"
         />
 
@@ -25,10 +26,9 @@
         android:id="@+id/backArrow"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:scaleX="-1"
-        android:src="@drawable/next"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
+        android:src="@drawable/chevron_left"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
         app:tint="@color/black"
         />
 
@@ -73,7 +73,7 @@
         android:text="Forgot password?"
         android:layout_marginTop="20dp"
         android:textColor="#9A5A5B"
-        android:textSize="18dp"
+        android:textSize="16dp"
         android:id="@+id/forget"
         />
 
@@ -84,7 +84,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:backgroundTint="#9A5A5B"
+        android:backgroundTint="#D19F9E"
         android:text="Log in"
         android:textStyle="bold"
         android:textSize="25dp"
@@ -122,7 +122,7 @@
         android:layout_alignBaseline="@+id/text1"
         android:layout_toEndOf="@+id/text1"
         android:text="Sign up"
-        android:textColor="#9A5A5B"
+        android:textColor="#D19F9E"
         android:textStyle="bold"
         android:id="@+id/signup"
         />
@@ -135,6 +135,18 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
         android:textSize="18dp"
-        android:textColor="#D19F9E"
+        android:textColor="#99575A"
+        android:id="@+id/text"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_above="@id/text"
+        android:background="@drawable/line"
+        android:backgroundTint="#ECECEC"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/line"
         />
 </RelativeLayout>
