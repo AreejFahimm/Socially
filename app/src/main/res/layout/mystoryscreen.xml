@@ -8,6 +8,8 @@
     android:background="@drawable/img_9"
     tools:context=".MainActivity11">
 
+<!--    bottom bar-->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +24,8 @@
         android:background="@drawable/group_1"
 
         />
+
+<!--    upper content-->
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="40dp"
@@ -65,6 +69,8 @@
         android:textColor="#935855"
         />
 
+   <!-- story line-->
+
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
@@ -73,7 +79,5 @@
         android:layout_marginTop="64dp"
         android:id="@+id/line5"
         />
-
-
 
 </RelativeLayout>

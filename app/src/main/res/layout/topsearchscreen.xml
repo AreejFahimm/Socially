@@ -8,6 +8,8 @@
     android:background="@color/white"
     tools:context=".MainActivity17">
 
+    <!--divisions of suggestions-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

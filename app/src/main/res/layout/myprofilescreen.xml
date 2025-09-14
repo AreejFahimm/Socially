@@ -7,6 +7,8 @@
     android:padding="10dp"
     >
 
+    <!--bottom bar-->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,6 +16,8 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/tabbar"
         />
+
+<!--    scrollbale upper content -->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -74,7 +78,7 @@
             android:layout_marginTop="20dp"
             android:id="@+id/acc1" />
 
-        <!-- Username Details -->
+        <!-- profile Details -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +91,7 @@
             android:textSize="17dp"
             android:id="@+id/jacob" />
 
-        <!-- Post Details -->
+        <!-- followers  Details -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,7 +184,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@pixsellz"
+            android:text=": @pixsellz"
             android:textColor="#41A5E1"
             android:layout_toRightOf="@id/desc"
             android:layout_marginStart="5dp"
@@ -327,6 +331,9 @@
             android:layout_below="@id/grid"
             android:layout_marginTop="8dp"
             android:id="@+id/line3"/>
+
+
+        <!--posts grid-->
 
         <LinearLayout
             android:id="@+id/imageGrid"

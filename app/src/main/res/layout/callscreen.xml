@@ -8,7 +8,7 @@
     android:background="#9A5A5B"
     tools:context=".MainActivity7">
 
-
+<!--mother pic and all info-->
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="180dp"
@@ -63,6 +63,8 @@
         android:layout_marginEnd="40dp"
 
         />
+
+<!--    end call button-->
 
     <Button
         android:layout_width="100dp"

@@ -6,6 +6,8 @@
     android:id="@+id/splash"
     >
 
+    <!--logo-->
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
@@ -14,6 +16,8 @@
         android:layout_gravity="center"
         android:layout_centerInParent="true"
         />
+
+    <!--from SMD-->
 
     <TextView
         android:layout_width="wrap_content"

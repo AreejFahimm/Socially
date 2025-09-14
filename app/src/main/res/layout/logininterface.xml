@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".MainActivity3">
 
-    <!-- Scrollable container -->
+    <!-- Scrollable content -->
     <ScrollView
         android:id="@+id/login_scroll"
         android:layout_width="match_parent"
@@ -17,7 +17,8 @@
         android:clipToPadding="false"
         android:paddingBottom="24dp">
 
-        <!-- Your original content -->
+<!--        main content-->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -41,6 +42,8 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
+            <!--login button, if i make it rectangle, cant change its color-->
+
             <Button
                 android:id="@+id/loginbtn"
                 android:layout_width="match_parent"
@@ -54,7 +57,7 @@
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />
-            <!-- If you use a shape drawable background, set android:backgroundTint="@null" -->
+
 
             <TextView
                 android:layout_width="wrap_content"

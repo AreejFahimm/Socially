@@ -8,6 +8,8 @@
     android:background="@color/white"
     tools:context=".MainActivity4">
 
+<!--    Logo-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +33,8 @@
         android:layout_marginStart="20dp"
         app:tint="@color/black"
         />
+
+<!--    login form-->
 
     <EditText
         android:layout_width="match_parent"
@@ -76,6 +80,8 @@
         android:textSize="16dp"
         android:id="@+id/forget"
         />
+
+    <!--login button-->
 
     <Button
         android:layout_width="match_parent"
@@ -126,6 +132,8 @@
         android:textStyle="bold"
         android:id="@+id/signup"
         />
+
+    <!--bottom logo-->
 
     <TextView
         android:layout_width="wrap_content"

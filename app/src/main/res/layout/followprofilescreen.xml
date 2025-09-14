@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".MainActivity13">
 
-    <!-- Bottom tab bar (fixed) -->
+    <!-- Bottom  bar  -->
     <ImageView
         android:id="@+id/tabbar"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:src="@drawable/tab_bar"
         android:layout_alignParentBottom="true" />
 
-    <!-- Top bar (fixed) -->
+    <!-- Top bar  -->
     <RelativeLayout
         android:id="@+id/top"
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
             android:layout_marginTop="45dp" />
     </RelativeLayout>
 
-    <!-- Scrollable middle content -->
+    <!-- Scrollable  content -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -71,7 +71,6 @@
         android:clipToPadding="false"
         android:paddingBottom="80dp">
 
-        <!-- Keep your original relative positioning inside this container -->
         <RelativeLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
@@ -418,7 +417,7 @@
                 android:layout_marginTop="8dp"
                 android:id="@+id/line2"/>
 
-            <!-- Your grid of photos; now it scrolls -->
+            <!-- images grid -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

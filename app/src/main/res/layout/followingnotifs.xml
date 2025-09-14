@@ -16,6 +16,7 @@
         android:layout_above="@id/bottombar"
         >
 
+<!--        top bar-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,6 +93,8 @@
             android:paddingBottom="20dp"
             >
 
+
+<!--            scrooable middle part -->
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -798,6 +801,9 @@
             </RelativeLayout>
         </ScrollView>
     </LinearLayout>
+
+<!--    bottom bar-->
+
     <RelativeLayout
         android:id="@+id/bottombar"
         android:layout_width="match_parent"

@@ -8,6 +8,8 @@
     android:background="@drawable/img_9"
     tools:context=".MainActivity10">
 
+<!--    bottom bar-->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,6 +28,8 @@
        android:layout_marginTop="70dp"
        />
 
+
+ <!--   top bar-->
 
     <TextView
         android:layout_width="match_parent"

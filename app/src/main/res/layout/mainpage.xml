@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".MainActivity5">
 
-    <!-- ===== TOP BAR (fixed) ===== -->
+    <!--  TOP BAR  -->
     <RelativeLayout
         android:id="@+id/topbar"
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
             android:layout_marginEnd="60dp" />
     </RelativeLayout>
 
-    <!-- ===== SCROLLABLE MIDDLE ===== -->
+    <!--  SCROLLABLE   -->
     <ScrollView
         android:id="@+id/feedScroll"
         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             >
 
-            <!-- STORIES -->
+            <!-- STORIES K GOLE -->
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/acc1"
                 android:layout_width="60dp"
@@ -167,7 +167,7 @@
                 android:background="@drawable/line"
                 android:backgroundTint="#ECECEC" />
 
-            <!-- POST HEADER -->
+            <!-- middle content -->
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/postedby"
                 android:layout_width="50dp"
@@ -213,7 +213,7 @@
                 android:background="@drawable/options"
                 android:textSize="30dp" />
 
-            <!-- IMAGE -->
+
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
@@ -222,7 +222,7 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/img_51" />
 
-            <!-- ACTION ROW -->
+            <!--like comment share -->
             <TextView
                 android:id="@+id/like"
                 android:layout_width="wrap_content"
@@ -272,7 +272,7 @@
                 android:background="@drawable/save"
                 android:textSize="23dp" />
 
-            <!-- LIKES -->
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/likedby"
                 android:layout_width="30dp"
@@ -330,7 +330,7 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <!-- CAPTION -->
+            <!-- post caption -->
             <TextView
                 android:id="@+id/joshua"
                 android:layout_width="wrap_content"
@@ -357,7 +357,7 @@
         </RelativeLayout>
     </ScrollView>
 
-    <!-- ===== BOTTOM NAV (fixed) ===== -->
+    <!--   BOTTOM NAV    -->
     <RelativeLayout
         android:id="@+id/bottombar"
         android:layout_width="match_parent"
