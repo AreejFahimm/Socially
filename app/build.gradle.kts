@@ -36,6 +36,12 @@ android {
 }
 
 dependencies {
+    // Espresso core
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+    // For JUnit4 support
+    androidTestImplementation ("androidx.test.ext:junit:1.1.5")
+    // Optional: for RecyclerView support
+    androidTestImplementation ("androidx.test.espresso:espresso-contrib:3.5.1")
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
